@@ -1,12 +1,6 @@
-Aplying the Observer pattern:
+This simple lab follows directly the GOF reading example of an MVC model, 
+with multiple views of a single model. 
+The basic idea is that changes to the model will automatically cause updates in the views
 
-- added the Observer interface (FrameObserver)
-	- all frames inplement the interface, and override the setCount method,	
-	
-	
-- refactored the Counter: 
-	- Counter has list of FrameObserver's,
-    - simplified the increment and decrement methods, 
-	- added mentod notifyObservers that loops through the list of Observers and sets the updated counter.
-	
-
+Applying the Observer pattern to avoid tight coupling between the counting (model) logic, 
+and the views (GUI display) as it violates the Single Responsibility Principle.
